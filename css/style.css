@@ -172,7 +172,6 @@ body, html {
 .more #content {
 	position: relative;
 
-	clear: both;
 	overflow: auto;
 }
 .more .result {
@@ -386,5 +385,9 @@ body, html {
 @media (max-width: 768px) { 
 	body, html {
 		font-size: 12px;
+	}
+	.more #content {
+		height: 170px;
+		overflow: auto;
 	}
 }
