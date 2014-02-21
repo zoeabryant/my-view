@@ -17,17 +17,31 @@ $(document).ready(function(){
 		// toggling more information
 		var name = $(this).parent().attr("data-name");
 		var searchterm = $(this).parent().attr("data-search");
+		
+		showInfo(name, searchterm);
+	});
 
+	// Show building info on click
+	$('.marker').click(function(){
+		// toggling more information
+		var name = $(this).parent().attr("data-name");
+		var searchterm = $(this).parent().attr("data-search");
+		
+		showInfo(name, searchterm);
+	});
+
+	// Showing building name when hovering over marker
+	$('.marker').mouseenter(function(){
+		$(this).siblings('.name').fadeTo(vspeed, 1);
+	});
+
+
+	function showInfo(name, searchterm){
 		$('.info').hide(); // hide irrelevant buildings
 		$('#'+name).show(); // show building information
 		$('.more').slideDown(); // show pretty box
 		imageSearch.execute(searchterm); // google image search (see search.js)
-	});
-
-	// Showing building name when hovering over marker
-	visual.next('.marker').mouseenter(function(){
-		$(this).siblings('.name').fadeTo(vspeed, 1);
-	});
+	};
 
 	// Fade building on mouseout
 	visual.mouseout(function(){
