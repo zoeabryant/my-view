@@ -42,18 +42,31 @@ $(document).ready(function(){
 // MORE INFORMATION TOGGLING
 	// show more info box
 	function showInfo(area){
+		//figure out which building by data-name class
 		var name = $(area).parent().attr("data-name");
-		var searchterm = $(area).parent().attr("data-search");
 
-		$('.info').hide(); // hide irrelevant buildings
-		$('#'+name).show(); // show building information
+		// run through buildings in buildings.json
+		for (var i=0; i<buildings.length; i++){
+			// find a match
+			if (buildings[i].id == name) {
+				// populate fields
+				$('#buildingname').html(buildings[i].name);
+				$('#buildinginfo').html(buildings[i].info);
+				imageSearch.execute(buildings[i].searchterm); // google image search (see search.js)
+			};
+		}
+		
+		// once populated, show.
 		$('.more').slideDown(); // show pretty box
-		imageSearch.execute(searchterm); // google image search (see search.js)
+
+		eye.hide();
+		$('title').hide();
 	};
 	// hide more info box
 	$('.more .toggle').click(function(){
 		$('.more').slideUp();
 		$('.info').hide();
+		eye.show();
 	});
 
 
@@ -69,6 +82,8 @@ $(document).ready(function(){
 			eye.addClass('on');
 		}
 	});
+
+
 
 });
 
@@ -87,7 +102,7 @@ $( window ).resize(function(){
 
 // Use mousewheel to scroll horizontally
 $(function() {
-	$("html, body").mousewheel(function(event, delta) {
+	$("html").mousewheel(function(event, delta) {
 		this.scrollLeft -= (delta * 30);
 		event.preventDefault();
 	});

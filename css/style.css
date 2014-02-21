@@ -118,7 +118,7 @@ body, html {
 	padding: 5px;
 }
 
-.visual .name strong {
+.visual .name span {
 	margin: -35px -10px;
 	display: inline-block;
 	background: #D31148;

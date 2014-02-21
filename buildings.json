@@ -1,0 +1,63 @@
+var buildings = [
+	{
+		"id":"canary",
+		"name":"Canary Wharf",
+		"searchterm":"Canary Wharf",
+		"info":"Canary Wharf is London's key financial hub and the home of London's second tallest building: One Canada Square, which stands at 771ft and boasts 50 floors. That's the one with the pointy roof in the middle. Canary Wharf is basically an accountants's mecca and is the work place for approximatly 90,000 people. The area is also known for having a shopping area that is nearly impossible to navigate around despite the best efforts of the wayfinding maps. You have been warned."
+	}, {
+		"id":"shard",
+		"name":"The Shard",
+		"searchterm":"The Shard",
+		"info":"Blah Blah Blah",
+	}, {
+		"id":"pan",
+		"name":"Pan Pennisula",
+		"searchterm":"Pan Pennisula",
+		"info":"Blah Blah Blah",
+	}, {
+		"id":"pilot",
+		"name":"The Pilot",
+		"searchterm":"The Pilot North Greenwich",
+		"info":"Blah Blah Blah",
+	}, {
+		"id":"station",
+		"name":"North Greenwich Station",
+		"searchterm":"North Greenwich Station",
+		"info":"Blah Blah Blah",
+	}, {
+		"id":"o2",
+		"name":"The O2",
+		"searchterm":"The O2",
+		"info":"Blah Blah Blah",
+	}, {
+		"id":"grenent",
+		"name":"Digital Enterprise Greenwich",
+		"searchterm":"Digital Enterprise Greenwich",
+		"info":"Blah Blah Blah",
+	}, {
+		"id":"soccer",
+		"name":"The London Soccerdome",
+		"searchterm":"The London Soccerdome",
+		"info":"Blah Blah Blah",
+	}, {
+		"id":"olympic",
+		"name":"The Olympic Park",
+		"searchterm":"The Olympic Park",
+		"info":"Blah Blah Blah",
+	}, {
+		"id":"sculpture",
+		"name":"Quantum Cloud",
+		"searchterm":"Quantum Cloud",
+		"info":"Blah Blah Blah",
+	}, {
+		"id":"emirates",
+		"name":"Emirates Air Line",
+		"searchterm":"Emirates Air Line",
+		"info":"Blah Blah Blah",
+	}, {
+		"id":"thames",
+		"name":"The River Thames",
+		"searchterm":"The River Thames",
+		"info":"Blah Blah Blah",
+	}
+];
