@@ -138,8 +138,6 @@ body, html {
 
 /* MORE INFORMATION */
 .more {
-	min-height: 250px;
-
 	display: none;
 	
 	position: fixed;
@@ -162,7 +160,12 @@ body, html {
 	margin: 1em 0em;
 	font-family: sans-serif;
 }
-.more .toggle {
+.more .toggle.cross {
+	display: none;
+	float:right;
+	cursor: pointer;
+}
+.more .toggle.bar {
 	background: url(../images/overlay.png);
 	text-align: center;
 	padding: 10px 0px;
@@ -382,12 +385,19 @@ body, html {
 }
 
 /* MOBILE SETTINGS */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 	body, html {
 		font-size: 12px;
+	}
+	.more {
+		max-height: 100%;
+		overflow: auto;
 	}
 	.more #content {
 		height: 170px;
 		overflow: auto;
+	}
+	.more .toggle.cross { /* on mobile show extra cross incase it screws up... */
+		display: block;
 	}
 }
