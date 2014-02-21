@@ -1,0 +1,389 @@
+/* PAGE LAYOUT */
+body, html {
+	padding: 0px;
+	margin: 0px;
+	
+	font-family: 'Loved by the King', sans-serif;
+	font-size: 16px;
+	line-height: 1.1;
+}
+
+#wrapper {
+	position: absolute;
+	height: 100%;
+	overflow: auto;
+}
+
+#bg {
+	display: block;
+	height: 100%;
+}
+
+/* TITLE */
+.title {
+	opacity: 1;
+	position: fixed;
+
+	font-size: 4em;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #fff;
+
+	text-align: center;
+	width: 100%;
+	margin: 13% 0 0 0;
+}
+
+/* TOGGLE VIEW ICON */
+.eye {
+	cursor: pointer;
+	position: fixed;
+	top: 15px;
+	left: 15px;
+
+	width: 36px;
+	height: 30px;
+
+	background: url(../images/eye_open.png) no-repeat center center;
+}
+
+.eye.on {
+	background: url(../images/eye_close.png) no-repeat center center;
+}
+
+/* BUILDING VISUAL MARKER */
+.marker {
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
+.marker {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 3s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    
+    animation-name: blinker;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker{  
+    0% { opacity: 0.0; }
+    25% { opacity: 0.5; }
+    50% { opacity: 1.0; }
+    75% { opacity: 0.5; }
+    100% { opacity: 0.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 0.0; }
+    25% { opacity: 0.5; }
+    50% { opacity: 1.0; }
+    75% { opacity: 0.5; }
+    100% { opacity: 0.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 0.0; }
+    25% { opacity: 0.5; }
+    50% { opacity: 1.0; }
+    75% { opacity: 0.5; }
+    100% { opacity: 0.0; }
+}
+
+/* VISUAL - When a building is selected */
+.visual {
+	position: absolute;
+}
+
+.visual .name {
+	cursor: pointer;
+	opacity: 0;
+	cursor: pointer;
+	border-bottom: 3px solid #fff;
+
+	height: 100%;
+	width: 100%;
+
+	margin: -5px -10px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.visual .name strong {
+	margin: -35px -10px;
+	display: inline-block;
+	background: #D31148;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 8px;
+
+	color: #fff;
+	letter-spacing: 0.1em;
+	font-weight: normal;
+	
+	font-size: 1.4em;
+	line-height: 1;
+}
+
+/* MORE INFORMATION */
+.more {
+	min-height: 250px;
+
+	display: none;
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+	left: 0;
+
+	background: url(../images/overlay.png);
+	/*background: #000;*/
+	color: #fff;
+	padding: 10px 30px;
+}
+.more .info {
+	display: none;
+}
+.more h2 {
+	margin: 0.5em 0em;
+}
+.more p {
+	margin: 1em 0em;
+	font-family: sans-serif;
+}
+.more .toggle {
+	background: url(../images/overlay.png);
+	text-align: center;
+	padding: 10px 0px;
+	cursor: pointer;
+	clear: both;
+}
+.more #content {
+	position: relative;
+
+	height: 170px;
+	overflow: auto;
+}
+.more .result {
+	display: inline-block;
+	margin-right: 10px;
+}
+.more #branding {
+	font-family: sans-serif;
+	float: left;
+}
+
+
+/* BUILDINGS */
+.canary { /* building */
+	width: 12.21%;
+	height: 21.47%;
+
+	left: 13.68%;
+	bottom: 34.36%;
+}
+
+.shard { /* building */
+	width: 2.43%;
+	height: 16.47%;
+
+	left: 1.89%;
+	bottom: 32.84%;
+}
+
+.pan { /* building */
+	width: 2.43%;
+	height: 18.7%;
+
+	left: 7.08%;
+	bottom: 32.66%;
+}
+
+.pilot { /* building */
+	width: 6.8%;
+	height: 13.49%;
+
+	left: 7.54%;
+	bottom: 10.52%;
+}
+
+.station { /* building */
+	width: 6.64%;
+	height: 12.13%;
+
+	left: 30.18%;
+	bottom: 28.67%;
+}
+
+.o2 { /* building */
+	width: 8.28%;
+	height: 26.89%;
+
+	left: 36.93%;
+	bottom: 31.35%;
+}
+
+.grenent { /* building */
+	width: 8.11%;
+	height: 15.72%;
+
+	left: 45.41%;
+	bottom: 39.16%;
+}
+
+.soccer { /* building */
+	width: 25.88%;
+	height: 14.16%;
+
+	left: 45.41%;
+	bottom: 23.54%;
+}
+
+.olympic { /* building */
+	width: 5.83%;
+	height: 10.79%;
+
+	left: 61.17%;
+	bottom: 36.74%;
+}
+
+.sculpture { /* building **/
+	width: 2.3%;
+	height: 14.79%;
+
+	left: 67.17%;
+	bottom: 33.74%;	
+}
+
+.emirates { /* building */
+	width: 2.39%;
+	height: 46%;
+
+	left: 69.8473282442748%;
+	bottom: 27.166666666666668%;
+}
+
+.thames { /* building */
+	width: 23%;
+	height: 9.26%;
+
+	left: 72.62%;
+	bottom: 21.47%;
+}
+
+
+/* FEEDBACK SPINNER */
+.spinner{
+	display: none;
+	width:100px;
+	height:100px;
+	margin:15% 42%;
+	position:fixed;
+	-webkit-animation: rotateit 1.3s linear infinite;
+	-moz-animation: rotateit 1.3s linear infinite;
+	animation: rotateit 1.3s linear infinite;
+}
+@-webkit-keyframes rotateit {
+	from { -webkit-transform: rotate(360deg);}
+	to { -webkit-transform: rotate(0deg);}
+}
+@-moz-keyframes rotateit {
+	from { -moz-transform: rotate(360deg);}
+	to { -moz-transform: rotate(0deg);}
+}
+@keyframes rotateit {
+	from { transform: rotate(360deg);}
+	to { transform: rotate(0deg);}
+}
+
+.spinner.circles div{
+	width: 20px;
+	height: 20px;
+	border-radius:50%;
+	background: white;
+	position: absolute;
+	top: 35px;
+	left: 45px;
+}
+.spinner.circles div:nth-child(1){
+	-webkit-transform: rotate(0deg) translate(0, -35px) scale(1.4);
+	-moz-transform: rotate(0deg) translate(0, -35px) scale(1.4);
+	transform: rotate(0deg) translate(0, -35px) scale(1.4);
+}
+.spinner.circles div:nth-child(2){
+	-webkit-transform: rotate(45deg) translate(0, -35px) scale(1.2);
+	-moz-transform: rotate(45deg) translate(0, -35px) scale(1.2);
+	transform: rotate(45deg) translate(0, -35px) scale(1.2);
+	opacity:0.7;
+}
+.spinner.circles div:nth-child(3){
+	-webkit-transform: rotate(90deg) translate(0, -35px) scale(1.1);
+	-moz-transform: rotate(90deg) translate(0, -35px) scale(1.1);
+	transform: rotate(90deg) translate(0, -35px) scale(1.1);
+	opacity:0.6;
+}
+.spinner.circles div:nth-child(4){
+	-webkit-transform: rotate(135deg) translate(0, -35px) scale(0.9);
+	-moz-transform: rotate(135deg) translate(0, -35px) scale(0.9);
+	transform: rotate(135deg) translate(0, -35px) scale(0.9);
+	opacity:0.5;
+}
+.spinner.circles div:nth-child(5){
+	-webkit-transform: rotate(180deg) translate(0, -35px) scale(0.7);
+	-moz-transform: rotate(180deg) translate(0, -35px) scale(0.7);
+	transform: rotate(180deg) translate(0, -35px) scale(0.7);
+	opacity:0.4;
+}
+.spinner.circles div:nth-child(6){
+	-webkit-transform: rotate(225deg) translate(0, -35px) scale(0.5);
+	-moz-transform: rotate(225deg) translate(0, -35px) scale(0.5);
+	transform: rotate(225deg) translate(0, -35px) scale(0.5);
+	opacity:0.3;
+}
+.spinner.circles div:nth-child(7){
+	-webkit-transform: rotate(270deg) translate(0, -35px) scale(0.3);
+	-moz-transform: rotate(270deg) translate(0, -35px) scale(0.3);
+	transform: rotate(270deg) translate(0, -35px) scale(0.3);
+	opacity:0.2;
+}
+.spinner.circles div:nth-child(8){
+	-webkit-transform: rotate(315deg) translate(0, -35px) scale(0.1);
+	-moz-transform: rotate(315deg) translate(0, -35px) scale(0.1);
+	transform: rotate(315deg) translate(0, -35px) scale(0.1);
+	opacity:0.1;
+}
+
+/* setting the Z-INDEXES in a handy place */
+.title {
+	z-index: 1;
+}
+.eye {
+	z-index: 3;
+}
+.visual {
+	z-index: 3;
+}
+.more {
+	z-index: 5;
+}
+.spinner{
+	display: none;
+	z-index: 99;
+}
+
+/* MOBILE SETTINGS */
+@media (max-width: 768px) { 
+	body, html {
+		font-size: 12px;
+	}
+}
