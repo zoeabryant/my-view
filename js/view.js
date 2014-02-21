@@ -84,11 +84,3 @@ $( window ).resize(function(){
 		location.reload();
 	}, 400);
 });
-
-// Use mousewheel to scroll horizontally
-$(function() {
-	$("html, body").mousewheel(function(event, delta) {
-		this.scrollLeft -= (delta * 30);
-		event.preventDefault();
-	});
-});
