@@ -17,6 +17,14 @@ body, html {
 	display: block;
 	height: 100%;
 }
+ 
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
 
 /* TITLE */
 .title {
@@ -150,7 +158,8 @@ body, html {
 	padding: 10px 30px;
 }
 .more .info {
-	display: none;
+	width: 80%;
+	/*display: none;*/
 }
 .more h2 {
 	margin: 0.5em 0em;

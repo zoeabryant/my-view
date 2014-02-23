@@ -3,61 +3,61 @@ var buildings = [
 		"id":"canary",
 		"name":"Canary Wharf",
 		"searchterm":"Canary Wharf",
-		"info":"Canary Wharf is London's key financial hub and the home of London's second tallest building: One Canada Square, which stands at 771ft and boasts 50 floors. That's the one with the pointy roof in the middle. Canary Wharf is basically an accountants's mecca and is the work place for approximatly 90,000 people. The area is also known for having a shopping area that is nearly impossible to navigate around despite the best efforts of the wayfinding maps. You have been warned."
+		"info":"Canary Wharf is London's key financial hub and the home of London's second tallest building: One Canada Square, which stands at 771ft and boasts 50 floors. That's the one with the pointy roof in the middle. Canary Wharf is basically an accountants's mecca and is the work place for approximately 90,000 people. The area is also known for having a shopping area that is nearly impossible to navigate around despite the best efforts of the way-finding maps. You have been warned."
 	}, {
 		"id":"shard",
 		"name":"The Shard",
 		"searchterm":"The Shard",
-		"info":"Blah Blah Blah",
+		"info":"The Shard is currently the tallest building in the European Union. That’s one hell of a view, which someone did think to take a 360 photo of and <a href='https://itunes.apple.com/gb/app/shard-view/id689373736?mt=8' target=‘_blank’ title=‘iTunes link'>make into an app</a>. At time of writing (Feb 2014) the Shard has been open to the public for one year. It has 72 habitable floors including viewing decks, offices, restaurants and a hotel is set to open soon.",
 	}, {
 		"id":"pan",
 		"name":"Pan Pennisula",
 		"searchterm":"Pan Pennisula",
-		"info":"Blah Blah Blah",
+		"info":"Pan Peninsula is split into apartments which promise to set you back £625 a week for a fully furnished 2 bedroom flat. Flats have access to a gym, swimming pool, balcony and elevated sense of self-worth. At night, it is lit from ground to the top floor with strong LED lights, which gradually change colour and never fail to catch my eye.",
 	}, {
 		"id":"pilot",
 		"name":"The Pilot",
 		"searchterm":"The Pilot North Greenwich",
-		"info":"Blah Blah Blah",
+		"info":"The Pilot is my local pub and is thought to be the oldest surviving building on the Greenwich Peninsula. It has a long illustrious history - although now it serves more commuters than coal workers. Or Pirates, which were also considered to be regulars in the long maritime history of this area. The Pilot also features in the <a href='https://www.youtube.com/watch?v=SIEsmGzo2UE'  target=‘_blank’ title=‘Parklife'>music video for Blur’s Parklife</a> and is therefore preserved by the Gods of Britpop forever. If that’s not cool enough, it was also apparently the local of artist Damien Hirst before he catapulted to fame.",
 	}, {
 		"id":"station",
 		"name":"North Greenwich Station",
 		"searchterm":"North Greenwich Station",
-		"info":"Blah Blah Blah",
+		"info":"North Greenwich Station is supposedly capable of handling about 20,000 passengers an hour. As a local I’d agree - but only if you are going in the same direction as all the people going to an event at the O2. If you’re not, you’re in trouble. It’s on the Jubilee line, currently the third busiest tube line.",
 	}, {
 		"id":"o2",
-		"name":"The O2",
+		"name":"The O2 (The Millennium Dome)",
 		"searchterm":"The O2",
-		"info":"Blah Blah Blah",
+		"info":"The O2 has 12 points, a diameter of 365 metres and is 52 metres high. That’s for 12 months, 365 days and 52 weeks. They haven’t been able to completely fill the space since taking out the ‘Millennium Experience’ exhibition - a highlight of the year 2000. This isn’t for lack of trying - the O2 currently boasts the famous arena, clubs, bars, restaurants, fake trees and a bowling alley.",
 	}, {
 		"id":"grenent",
 		"name":"Digital Enterprise Greenwich",
 		"searchterm":"Digital Enterprise Greenwich",
-		"info":"Blah Blah Blah",
+		"info":"Digital Enterprise Greenwich is the Peninsula’s answer to the Silicone Roundabout. The building itself is home to tech and creative businesses. It is also the friendly neighbour of <a href='http://www.ravensbourne.ac.uk/' target=‘_blank’ >Ravensbourne</a>, my university, which cannot be seen from my window. A shame, because it is an amazing building, but a relief when I’m facing deadlines.",
 	}, {
 		"id":"soccer",
 		"name":"The London Soccerdome",
 		"searchterm":"The London Soccerdome",
-		"info":"Blah Blah Blah",
+		"info":"The largest indoor football arena in Europe, The London Soccerdome another big event venue in the Greenwich Penninsula. It was a training facility for the 2012 Olympic games. Hosting everything from professional training, your kid’s birthday party to the Soccer Six: celeb football showdown, you can never quite predict what the crowd will be. It also happens to be on the road of choice to park your limo if you’re heading to the O2 Arena.",
 	}, {
 		"id":"olympic",
-		"name":"The Olympic Park",
-		"searchterm":"The Olympic Park",
-		"info":"Blah Blah Blah",
+		"name":"Queen Elizabeth Olympic Park",
+		"searchterm":"Queen Elizabeth Olympic Park",
+		"info":"The Olympic Park was constructed for the 2012 London Olympic games. From my view you can just about see the distinctive triangular points of the olympic stadium, which were sadly taken down a few months after this photo was taken. You can also see the ArcelorMittal Orbit - the red helter skelter and Britain’s largest piece of public art. It also has an observation tower in the top.",
 	}, {
 		"id":"sculpture",
 		"name":"Quantum Cloud",
 		"searchterm":"Quantum Cloud",
-		"info":"Blah Blah Blah",
+		"info":"The Quantum Cloud is a sculpture by British Sculpture Antony Gormley, who is also known for the Angel of the North in Newcastle upon Tyne and the Another Place installation near Liverpool. He's kind of a big deal in the art work. The steel units intersect to show the figure of a man in the middle. The steel units themselves were calculated using a computer algorithm based on numbers constructed from walking patterns (<a href='http://en.wikipedia.org/wiki/Random_walk'  target=‘_blank’>random walk</a>).",
 	}, {
 		"id":"emirates",
 		"name":"Emirates Air Line",
 		"searchterm":"Emirates Air Line",
-		"info":"Blah Blah Blah",
+		"info":"The Emirates Air Line, or the Thames cable car, offers a wonderful view of the surrounding area. According to Wikipedia, it’s used by only 4 regular commuters from the Royal Docks, which is probably good considering it’s closed during high winds - something tube lines don’t really have to worry about. At night the pods light up red and carry on their calm journey across the sky.",
 	}, {
 		"id":"thames",
 		"name":"The River Thames",
-		"searchterm":"The River Thames",
-		"info":"Blah Blah Blah",
+		"searchterm":"The River Thames East London",
+		"info":"Britain’s most famous river. The stories are endless. This particular stretch of the river has it’s own history. Blackwall point, the northern point where the O2 now sits, was a favourite place to hang the corpses of Pirates up in cages to deter other would-be smugglers. Blackwall point later became a power station in the industrial boom. The river remained steadfast as the area suffered and became polluted before some bright spark had the idea of redeveloping it in the 1990’s and sticking a massive tent there. Out of view is the Thames Barrier, helping prevent London flooding since 1982 and 'A Slice of Reality’ modern art by Richard Wilson.",
 	}
 ];
