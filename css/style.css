@@ -37,7 +37,6 @@ a:hover {
 	opacity: 1;
 	position: fixed;
 
-	top: 8%;
 	display: inline;
 
 	font-size: 4em;
@@ -48,7 +47,7 @@ a:hover {
 
 	text-align: center;
 	width: 100%;
-	margin: 13% 0 0 0;
+	margin: 10% 0 0 0;
 }
 
 /* TOGGLE VIEW ICON */
