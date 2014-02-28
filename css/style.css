@@ -406,9 +406,12 @@ a:hover {
 	.more {
 		max-height: 100%;
 		overflow: auto;
+		width: 90%;
+		right: 0;
+		left: 0;
 	}
 	.more #content {
-		height: 170px;
+		height: 130px;
 		overflow: auto;
 	}
 	.more .toggle.cross { /* on mobile show extra cross incase it screws up... */
