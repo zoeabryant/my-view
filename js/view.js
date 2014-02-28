@@ -5,7 +5,7 @@ $(document).ready(function(){
 	var eye = $('.eye');
 
 	// Title fades out to show pretty (photoshopped) sky
-	// $('.title').delay(2000).fadeOut(1000);
+	$('.title').delay(2000).fadeOut(1000);
 
 
 // NAME SHOW - on area
@@ -77,11 +77,12 @@ $(document).ready(function(){
 		});
 
 	};
-	// hide more info box
+	// hide more info box by toggle
 	$('.more .toggle').click(function(){
 		hideinfo();
 	});
 
+	// hide more info box
 	var hideinfo = function hideinfo(){
 		// fade in interface
 		eye.fadeIn();
