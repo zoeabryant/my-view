@@ -5,13 +5,14 @@ $(document).ready(function(){
 	var eye = $('.eye');
 
 	// Title fades out to show pretty (photoshopped) sky
-	$('.title').delay(2000).fadeOut(1000);
+	// $('.title').delay(2000).fadeOut(1000);
 
 
 // NAME SHOW - on area
 	// Show building name on area hover
 	visual.mouseenter(function(){
 		$(this).fadeTo(vspeed, 1);
+		fadeall();
 	});
 
 	// Show building info on area click
@@ -24,6 +25,7 @@ $(document).ready(function(){
 	// Showing building name on marker hover
 	$('.marker').mouseenter(function(){
 		$(this).siblings('.name').fadeTo(vspeed, 1);
+		fadeall();
 	});
 
 	// Show building info on marker click
@@ -38,6 +40,11 @@ $(document).ready(function(){
 		$(this).fadeTo(vspeed, 0);
 	});
 
+	var fadeall = function fadeall(){
+		setTimeout(function() {
+			visual.fadeTo(vspeed, 0)
+		}, 3000);
+	}
 
 // MORE INFORMATION TOGGLING
 	// show more info box
@@ -59,15 +66,32 @@ $(document).ready(function(){
 		// once populated, show.
 		$('.more').slideDown(); // show pretty box
 
-		eye.hide();
-		$('title').hide();
+		// fade out interface
+		eye.fadeOut();
+		$('title').fadeOut().hide();
+		$('.visual').fadeOut();
+
+		// make it so if you click outside of the div it hides
+		$('#bg').click(function(){
+			hideinfo();
+		});
+
 	};
 	// hide more info box
 	$('.more .toggle').click(function(){
+		hideinfo();
+	});
+
+	var hideinfo = function hideinfo(){
+		// fade in interface
+		eye.fadeIn();
+		$('title').show().fadeIn();
+		$('.visual').fadeIn();
+
 		$('.more').slideUp();
 		$('.info').hide();
-		eye.show();
-	});
+
+	};
 
 
 // INFORMATION TOGGLING - View all
@@ -83,27 +107,17 @@ $(document).ready(function(){
 		}
 	});
 
-
-
-});
-
-// Fade in the title when the user scrolls the page, just to remind them of my ego...
-$( window ).scroll(function() {
-	$('.title').fadeTo(1000, 1).delay(1500).fadeOut(1000);
-});
-
-// Reload the page on resize to reconfigure the marker - but show a nice UX loader spinner first
-$( window ).resize(function(){
-	$('#reloading').fadeTo(200, 1);
-	setTimeout(function() {
-		location.reload();
-	}, 400);
-});
-
-// Use mousewheel to scroll horizontally
-$(function() {
-	$("html").mousewheel(function(event, delta) {
-		this.scrollLeft -= (delta * 30);
-		event.preventDefault();
+	// Fade in the title when the user scrolls the page, just to remind them of my ego...
+	$( window ).scroll(function() {
+		$('.title').fadeTo(1000, 1).delay(1500).fadeOut(1000);
 	});
+
+	// Reload the page on resize to reconfigure the marker - but show a nice UX loader spinner first
+	$( window ).resize(function(){
+		$('#reloading').fadeTo(200, 1);
+		setTimeout(function() {
+			location.reload(true);
+		}, 400);
+	});
+
 });
